@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pranav Kakad - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f0f2f5;
+      color: #333;
+    }
+    .resume-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .sidebar {
+      width: 100%;
+      max-width: 330px;
+      background-color: #102c44;
+      color: white;
+      padding: 30px 20px;
+    }
+    .sidebar img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 15px;
+      border: 2px solid #fff;
+      cursor: pointer;
+    }
+    .sidebar h2, .sidebar p {
+      text-align: center;
+      margin: 5px 0;
+    }
+    .section-title {
+      font-size: 14px;
+      margin-top: 25px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #ffffff33;
+      padding-bottom: 5px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .main {
+      flex: 1;
+      padding: 30px 40px;
+    }
+    .main h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+    .main h3 {
+      color: #00695c;
+      margin-top: 25px;
+    }
+    .main ul {
+      padding-left: 18px;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+    .print-share {
+      text-align: center;
+      margin: 20px;
+    }
+    .print-share a, .print-share button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .print-button { background: #00695c; }
+    .whatsapp { background: #25D366; }
+    .linkedin { background: #0a66c2; }
+
+    .print-share button:hover,
+    .print-share a:hover {
+      opacity: 0.85;
+    }
+
+    .skill-bar {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .bar {
+      background-color: #ffffff33;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 4px 0 12px;
+      height: 10px;
+    }
+    .progress {
+      height: 100%;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .resume-container {
+        flex-direction: column;
+      }
+      .sidebar, .main {
+        width: 100%;
+        max-width: 100%;
+      }
+      .main {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Share & Print Buttons -->
+<div class="print-share">
+  <button class="print-button" onclick="window.print()">🖨️ Print</button>
+  <a class="whatsapp" href="https://api.whatsapp.com/send?phone=918308753437" target="_blank">📱 WhatsApp</a>
+  <a class="linkedin" href="https://www.linkedin.com/in/pranav-kakad-63996a2b6" target="_blank">🔗 LinkedIn</a>
+</div>
+
+<!-- Resume Layout -->
+<div class="resume-container">
+  <div class="sidebar">
+
+    <!-- ✅ Editable Profile Photo -->
+    <div style="text-align: center;">
+      <img id="profileImage" src="profile_photo.png" alt="Profile Photo" onclick="changeProfilePhoto()" />
+    </div>
+
+    <h2>Pranav Kakad</h2>
+    <p>Student</p>
+
+    <div class="section-title">Contact</div>
+    <ul>
+      <li>📞 8308753437</li>
+      <li>✉ pranavkakad6@gmail.com</li>
+      <li>📍 Manish Nagar, Nagpur</li>
+    </ul>
+
+    <div class="section-title">Skills</div>
+    <ul>
+      <li>Project Management</li>
+      <li>Teamwork & Collaboration</li>
+      <li>Time Management</li>
+    </ul>
+
+    <div class="section-title">Languages</div>
+    <div class="skill-bar">
+      <p>English</p>
+      <div class="bar"><div class="progress" style="width: 90%; background-color: #4caf50;"></div></div>
+      <p>Hindi</p>
+      <div class="bar"><div class="progress" style="width: 95%; background-color: #2196f3;"></div></div>
+      <p>Indian Accent (American English)</p>
+      <div class="bar"><div class="progress" style="width: 75%; background-color: #fbc02d;"></div></div>
+    </div>
+
+    <div class="section-title">Reference</div>
+    <ul>
+      <li>📞 8308753437</li>
+      <li>✉ pranavkakad6@gmail.com</li>
+      <li>🔗 Resume: Available on request</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h1>PRANAV <span style="color:#00695c;">KAKAD</span></h1>
+    <h3>Student, P.R. Pote College of Engineering, Amravati</h3>
+
+    <h3>Career Objective</h3>
+    <p>To work in a dynamic and challenging environment where I can effectively contribute my skills and grow professionally as an asset to the organization.</p>
+
+    <h3>Education</h3>
+    <ul>
+      <li><strong>B.Tech in Electronics & Telecommunication</strong> (2023–2027)<br>P.R. Pote College of Engineering and Management, Amravati<br>CGPA (2nd Year): 8.55 | Currently in 2nd Year, 4th Semester</li>
+      <li><strong>Diploma in Electronics and Telecommunication Engineering</strong> (2024)<br>Government Polytechnic, Amravati<br>Percentage: 81%</li>
+      <li><strong>SSC (10th)</strong> (2021)<br>Adarsh High School, Amravati<br>Percentage: 85%</li>
+    </ul>
+
+    <h3>Examinations</h3>
+    <ul>
+      <li>Diploma Final Score: 81%</li>
+    </ul>
+
+    <h3>Certifications & Internships</h3>
+    <ul>
+      <li><a href="https://www.credly.com/go/kZsdM6eg" target="_blank">AWS Virtual Internship – Eduskill</a></li>
+      <li><a href="https://verify.skilljar.com/c/ocqfsw66ta8x" target="_blank">Google Android Developer</a></li>
+      <li>Google AI/ML Virtual Internship – Eduskill</li>
+      <li>AWS Data Engineering Virtual Internship</li>
+      <li>Google Android Developer – Virtual Internship</li>
+      <li>Web Development – Simplilearn</li>
+    </ul>
+
+    <h3>Projects</h3>
+    <ul>
+      <li>Duplicate Chrome Browser</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  function changeProfilePhoto() {
+    const fileInput = document.createElement('input');
+    fileInput.type = 'file';
+    fileInput.accept = 'image/*';
+    fileInput.onchange = function(event) {
+      const image = document.getElementById('profileImage');
+      const file = event.target.files[0];
+      if (file) {
+        image.src = URL.createObjectURL(file);
+      }
+    };
+    fileInput.click();
+  }
+</script>
+
+</body>
+</html>
